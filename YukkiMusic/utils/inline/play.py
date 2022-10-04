@@ -11,35 +11,12 @@ import random
 
 from pyrogram.types import InlineKeyboardButton
 
-selections = [
-    "▁▄▂▇▄▅▄▅▃",
-    "▁▃▇▂▅▇▄▅▃",
-    "▃▁▇▂▅▃▄▃▅",
-    "▃▄▂▄▇▅▃▅▁",
-    "▁▃▄▂▇▃▄▅▃",
-    "▃▁▄▂▅▃▇▃▅",
-    "▁▇▄▂▅▄▅▃▄",
-    "▁▃▅▇▂▅▄▃▇",
-    "▃▅▂▅▇▁▄▃▁",
-    "▇▅▂▅▃▄▃▁▃",
-    "▃▇▂▅▁▅▄▃▁",
-    "▅▄▇▂▅▂▄▇▁",
-    "▃▅▂▅▃▇▄▅▃",
-]
-
 
 ## After Edits with Timer Bar
 
 
-def stream_markup_timer(_, videoid, chat_id, played, dur):
-    bar = random.choice(selections)
+def stream_markup_timer(_, videoid, chat_id, played):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
         [
             InlineKeyboardButton(
                 text="▷",
@@ -67,10 +44,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [    
            InlineKeyboardButton(
-                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/+GZW7CjkoSXNkZWVl"
+                text="Owner", url=f"https://t.me/Ammuyee"
             ),
            InlineKeyboardButton(
-                text="ᴏᴡɴᴇʀ", url=f"https://t.me/Bukansuhutele"
+                text="Channel", url=f"https://t.me/Vecekayehhh"
             ),
         ],
         [
@@ -82,15 +59,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     return buttons
 
 
-def telegram_markup_timer(_, chat_id, played, dur):
-    bar = random.choice(selections)
+def telegram_markup_timer(_, chat_id, played):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
         [
             InlineKeyboardButton(
                 text="▷",
@@ -136,10 +106,10 @@ def stream_markup(_, videoid, chat_id):
         ],
         [    
            InlineKeyboardButton(
-                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/+GZW7CjkoSXNkZWVl"
+                text="Owner", url=f"https://t.me/Ammuyee"
             ),
            InlineKeyboardButton(
-                text="ᴏᴡɴᴇʀ", url=f"https://t.me/Bukansuhutele"
+                text="Channel", url=f"https://t.me/Vecekayehhh"
             ),
         ],
         [
@@ -292,10 +262,10 @@ def panel_markup_1(_, videoid, chat_id):
         ],
         [    
            InlineKeyboardButton(
-                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/+GZW7CjkoSXNkZWVl"
+                text="Owner", url=f"https://t.me/Ammuyee"
             ),
            InlineKeyboardButton(
-                text="ᴏᴡɴᴇʀ", url=f"https://t.me/Bukansuhutele"
+                text="Channel", url=f"https://t.me/Vecekayehhh"
             ),
         ],
         [
@@ -368,10 +338,10 @@ def panel_markup_3(_, videoid, chat_id):
         ],
         [    
            InlineKeyboardButton(
-                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/+GZW7CjkoSXNkZWVl"
+                text="Owner", url=f"https://t.me/Ammuyee"
             ),
            InlineKeyboardButton(
-                text="ᴏᴡɴᴇʀ", url=f"https://t.me/Bukansuhutele"
+                text="Channel", url=f"https://t.me/Vecekayehhh"
             ),
         ],
         [
